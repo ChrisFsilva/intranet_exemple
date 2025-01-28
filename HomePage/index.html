@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet Dinâmica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="./IMG/logo.png">
+            <ul>
+                <li><button onclick="loadContent('./componentes/info.html')">Aniversariantes do mês</button></li>
+                <!-- <li><button onclick="loadContent('./componentes/titicket.html')">Abrir chamado para o TI</button></li> -->
+                <li><button onclick="loadContent('./componentes/shortcuts.html')">Atalhos para sistemas</button></li>
+                <li><button onclick="loadContent('./componentes/speedtest.html')">Velocidade de rede</button></li>
+                <li><button onclick="loadContent('./componentes/uptimekuma.html')">Status de servidores</button></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <!-- O conteúdo dinâmico será carregado aqui -->
+            <div id="dynamic-content">
+                <div>
+                    <p>Bem-vindo à intranet</p>
+                </div>
+                <div class="homeconteud">
+                    <img src="./IMG/HomeIntra.png">
+                </div>
+                <div class="info_line">
+                    <div class="info_squad">
+                        <div class="info_title">
+                            PASTA SEGURA
+                        </div>
+                        <div class="info_conteud">              
+                            Sabia que salvar seus arquivos na pasta "Documentos" é uma ótima ideia? Assim, tudo fica guardado no servidor, com backup garantido e segurança extra! 😊
+                        </div>
+                    </div>
+                    <div class="info_squad">
+                        <div class="info_title">
+                            Confraternização Alko
+                        </div>
+                        <div class="info_conteud">
+                            Já está sabendo da novidade? Nossa confraternização de fim de ano será no dia 13/12! 🥳 Vamos celebrar juntos mais um ano de conquistas e momentos especiais. Não fique de fora! 
+                        </div>
+                    </div>
+                    <div class="info_squad">
+                        <div class="info_title">
+                            Manutenção porgramada
+                        </div>
+                        <div class="info_conteud">
+                            Atenção, pessoal! Após o dia 13/12, vamos iniciar alguns processos de manutenção na rede de internet para melhorar ainda mais nossos serviços. Contamos com sua compreensão! 😊
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="banner">
+            <img src="./IMG/banner.jpg">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

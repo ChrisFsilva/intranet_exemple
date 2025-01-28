@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="../componentes_styles/titicket.css">
+<div class="form-container">
+    <h1>Contato com Suporte</h1>
+    <form action="../componentes_scripts/send_email.php" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Digite o seu nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite o seu e-mail para retorno do chamado" required>
+
+        <label for="subject">Assunto:</label>
+        <input type="text" id="subject" name="subject" placeholder="Resuma seu problema/pedido" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Detalhe o seu problema/pedido" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
